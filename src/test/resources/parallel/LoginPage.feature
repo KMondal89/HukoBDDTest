@@ -15,7 +15,7 @@ Feature: To test the Login feature in huko site/application
       | username                    | password     |
       | kaustavmondal1989@gmail.com | Kaustav@1989 |
       | kaustavmondal1989@gmail.com | Kaustav@1989 |
-      | kaustavmondal1989@gmail.com | Kaustav@1989 |
+      | kaustavmondal1989@gmail.com | Kaustav@198 |
       
 
   @invalid

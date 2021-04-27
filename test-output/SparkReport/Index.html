@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Huko.net-Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 27, 2021 11:38:05 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 28, 2021 01:16:46 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 27, 2021 11:38:05 pm</h3>
+<h3>Apr 28, 2021 01:16:46 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 27, 2021 11:38:50 pm</h3>
+<h3>Apr 28, 2021 01:17:34 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"To test the Login feature in huko site/application":37.514,"To test some HomePage components":43.932
+"To test some HomePage components":47.404,"To test the Login feature in huko site/application":42.636
 };
 </script>
 <div class="row">
@@ -171,22 +171,6 @@ var timeline = {
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@fgtpasslink</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@invalid</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
 <tr>
 <td>@valid</td>
 <td>3</td>
@@ -198,6 +182,22 @@ var timeline = {
 <tr>
 <td>@test</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@fgtpasslink</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@invalid</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -274,7 +274,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@fgtpasslink</a><a class="dropdown-item" href="#">@invalid</a><a class="dropdown-item" href="#">@valid</a><a class="dropdown-item" href="#">@test</a>
+<a class="dropdown-item" href="#">@valid</a><a class="dropdown-item" href="#">@test</a><a class="dropdown-item" href="#">@fgtpasslink</a><a class="dropdown-item" href="#">@invalid</a>
 </ul>
 </li>
 </ul>
@@ -285,9 +285,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">To test the Login feature in huko site/application</p>
+            <p class="name">To test some HomePage components</p>
             <p class="text-sm">
-              <span>23:38:06 pm</span> / <span>00:00:37:514</span>
+              <span>01:16:47 am</span> / <span>00:00:47:404</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -295,10 +295,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">To test the Login feature in huko site/application</h5>
-<span class='badge badge-success'>04.27.2021 23:38:06</span>
-<span class='badge badge-danger'>04.27.2021 23:38:43</span>
-<span class='badge badge-default'>00:00:37:514</span>
+<h5 class="test-status text-pass">To test some HomePage components</h5>
+<span class='badge badge-success'>04.28.2021 01:16:47</span>
+<span class='badge badge-danger'>04.28.2021 01:17:34</span>
+<span class='badge badge-default'>00:00:47:404</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -308,7 +308,65 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To check whether forgot password link is available in login page</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check homepage components</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.HomePageSteps.user_has_already_logged_in_the_application(io.cucumber.datatable.DataTable)">
+                <span>Given user has already logged in the application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>kaustavmondal1989@gmail.com</td><td>Kaustav@1989</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePageSteps.user_is_on_homepage()">
+                <span>Given user is on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.HomePageSteps.check_these_sections_are_available_validate_the_count_as_four(io.cucumber.datatable.DataTable)">
+                <span>Then check these sections are available validate the count as four</span>
+      <div><table class='markup-table table '><tr><td>Contacts activity stream</td></tr><tr><td>Deals</td></tr><tr><td>Twitter</td></tr><tr><td>Exchange Rates</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To test the Login feature in huko site/application</p>
+            <p class="text-sm">
+              <span>01:16:47 am</span> / <span>00:00:42:636</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To test the Login feature in huko site/application</h5>
+<span class='badge badge-success'>04.28.2021 01:16:47</span>
+<span class='badge badge-danger'>04.28.2021 01:17:30</span>
+<span class='badge badge-default'>00:00:42:636</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>To check whether forgot password link is available in login page</div>
       </div>
     </div>
         <div class="collapse">
@@ -370,7 +428,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Check login is unsuccessfull with invalid credentials.</div>
+                  <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Check login is unsuccessfull with invalid credentials.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -474,14 +532,14 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Check login is successfull with valid credentials.</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Check login is successfull with valid credentials.</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Check login is successfull with valid credentials.</div>
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Check login is successfull with valid credentials.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -585,64 +643,6 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">To test some HomePage components</p>
-            <p class="text-sm">
-              <span>23:38:06 pm</span> / <span>00:00:43:932</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">To test some HomePage components</h5>
-<span class='badge badge-success'>04.27.2021 23:38:06</span>
-<span class='badge badge-danger'>04.27.2021 23:38:50</span>
-<span class='badge badge-default'>00:00:43:932</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Check homepage components</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="parallel.HomePageSteps.user_has_already_logged_in_the_application(io.cucumber.datatable.DataTable)">
-                <span>Given user has already logged in the application</span>
-      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>kaustavmondal1989@gmail.com</td><td>Kaustav@1989</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.HomePageSteps.user_is_on_homepage()">
-                <span>Given user is on homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.HomePageSteps.check_these_sections_are_available_validate_the_count_as_four(io.cucumber.datatable.DataTable)">
-                <span>Then check these sections are available validate the count as four</span>
-      <div><table class='markup-table table '><tr><td>Contacts activity stream</td></tr><tr><td>Deals</td></tr><tr><td>Twitter</td></tr><tr><td>Exchange Rates</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
       </ul>
     </div>
   </div>
@@ -660,108 +660,6 @@ eventsCount: 5,
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@fgtpasslink</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@fgtpasslink</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>To check whether forgot password link is available in login page</a>
-<div class="">
-<span class="badge badge-default">To test the Login feature in huko site/application.To check whether forgot password link is available in login page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@invalid</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@invalid</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='6'>Check login is unsuccessfull with invalid credentials.</a>
-<div class="">
-<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>Check login is unsuccessfull with invalid credentials.</a>
-<div class="">
-<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='10'>Check login is unsuccessfull with invalid credentials.</a>
-<div class="">
-<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Check login is unsuccessfull with invalid credentials.</a>
-<div class="">
-<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -786,9 +684,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
+<td>01:16:47 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='8'>Check login is successfull with valid credentials.</a>
+<a href="#" class="linked" test-id='3' id='9'>Check login is successfull with valid credentials.</a>
 <div class="">
 <span class="badge badge-default">To test the Login feature in huko site/application.Check login is successfull with valid credentials.</span>
 </div>
@@ -796,9 +694,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
+<td>01:16:47 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>Check login is successfull with valid credentials.</a>
+<a href="#" class="linked" test-id='3' id='11'>Check login is successfull with valid credentials.</a>
 <div class="">
 <span class="badge badge-default">To test the Login feature in huko site/application.Check login is successfull with valid credentials.</span>
 </div>
@@ -806,9 +704,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
+<td>01:16:47 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='13'>Check login is successfull with valid credentials.</a>
+<a href="#" class="linked" test-id='3' id='13'>Check login is successfull with valid credentials.</a>
 <div class="">
 <span class="badge badge-default">To test the Login feature in huko site/application.Check login is successfull with valid credentials.</span>
 </div>
@@ -842,11 +740,113 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:38:06 pm</td>
+<td>01:16:47 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='4'>Check homepage components</a>
+<a href="#" class="linked" test-id='1' id='2'>Check homepage components</a>
 <div class="">
 <span class="badge badge-default">To test some HomePage components.Check homepage components</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@fgtpasslink</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@fgtpasslink</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:16:47 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>To check whether forgot password link is available in login page</a>
+<div class="">
+<span class="badge badge-default">To test the Login feature in huko site/application.To check whether forgot password link is available in login page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@invalid</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@invalid</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:16:47 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='6'>Check login is unsuccessfull with invalid credentials.</a>
+<div class="">
+<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:16:47 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='7'>Check login is unsuccessfull with invalid credentials.</a>
+<div class="">
+<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:16:47 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='10'>Check login is unsuccessfull with invalid credentials.</a>
+<div class="">
+<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:16:47 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='12'>Check login is unsuccessfull with invalid credentials.</a>
+<div class="">
+<span class="badge badge-default">To test the Login feature in huko site/application.Check login is unsuccessfull with invalid credentials.</span>
 </div>
 </td>
 </tr>
